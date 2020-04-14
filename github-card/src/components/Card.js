@@ -1,15 +1,7 @@
 import React from 'react'
-import styled, {createGlobalStyle} from 'styled-components'
+import styled from 'styled-components'
 
 // STYLES HERE =============
-const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Noticia+Text&display=swap');
-
-    h1 {
-        font-family: 'Noticia Text', serif;
-    }
-    `
-
 const Container = styled.div`
     background-color: #547AA5;
     padding: 15px;
@@ -41,7 +33,6 @@ const Info = styled.div`
 const Card = props => {
     return (
         <Container>
-            <GlobalStyle />
             <h1>{props.user.name}'s Github Profile</h1>
             <Flex>
                 <div>
